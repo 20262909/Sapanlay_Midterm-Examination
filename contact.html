@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Midterm Examination</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+    <div style="text-align: center;">
+        <!--Navigation bar : index - about - services - media - contact-->
+        <nav style="background-color: #22252A; padding: 15px;">
+            <a href="index.html" style="color: white; text-decoration: none; ">Home</a> |
+            <a href="about.html" style="color: white; text-decoration: none; ">About</a> |
+            <a href="services.html" style="color: white; text-decoration: none; ">Services</a> |
+            <a href="media.html" style="color: white; text-decoration: none; ">Media</a> |
+            <a href="contact.html" style="color: white; text-decoration: none; ">Contact</a>
+        </nav>
+
+        <main>
+            <section id="contact" style="padding: 40px 0;">
+                <img src="icon_contact.jpg" alt="Contact Icon" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover;"><br>
+                <h2>Contact Details</h2>
+                
+                <form action="#" method="post" style="text-align: center;">
+                    <fieldset style="display: inline-block; text-align: center;">
+                        <legend>Contact Form</legend>
+
+
+                        <!--Full Name : "full name" - minlength="3"-->
+                        <p>
+                            <label for="fullname">Full name:</label><br>
+                            <input type="text" id="fullname" name="fullname" placeholder="Full Name" minlength="3" required>
+                        </p>
+                        
+
+
+                        <!--Email Address : "email address"- minlength="3"-->
+                        <p>
+                            <label for="email">Email Address:</label><br>
+                            <input type="email" id="email" name="email" placeholder="Email Address" minlength="3" required>
+                        </p>
+
+
+                        <!--Inquiry Topic : general inquiry - services - feedback-->
+                        <p>
+                            <label for="subject">Subject:</label><br>
+                            <select id="subject" name="subject" required>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Services">Services</option>
+                                <option value="Feedback">Feedback</option>
+                            </select>
+                        </p>
+
+
+                        <!--Message : "How can I help you?" - minlength="3" submit button-->
+                        <p>
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="4" cols="40" placeholder="How can I help you?" minlength="3" required></textarea>
+                        </p>
+                        <p>
+                            <button type="submit">Submit</button>
+
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+
+        <footer style="background-color: #22252A; color: white; padding: 0.1px;">
+            <p>&copy; Developed by Maria Sapanlay | HUMAN-COMPUTER INTERACTION</p>
+        </footer>
+    </div>
+
+</body>
+</html>
